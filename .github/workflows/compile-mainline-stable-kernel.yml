@@ -13,15 +13,15 @@ on:
       kernel_source:
         description: "Select the kernel source"
         required: false
-        default: "ophub"
+        default: "net5"
         type: choice
         options:
           - unifreq
-          - ophub
+          - net5
       kernel_version:
         description: "Select kernel version"
         required: false
-        default: "6.18.y"
+        default: "6.12.y"
         type: choice
         options:
           - all
@@ -79,7 +79,7 @@ on:
       kernel_sign:
         description: "Set the kernel custom signature"
         required: false
-        default: "-ophub"
+        default: "-agency"
         type: choice
         options:
           - -ophub
@@ -92,7 +92,7 @@ on:
           - -summer-growing
           - -autumn-harvesting
           - -winter-storing
-          - -yourname
+          - -agency
       kernel_config:
         description: "Set the path of kernel .config"
         required: false

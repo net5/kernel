@@ -13,11 +13,11 @@ on:
       kernel_source:
         description: "Select the kernel source"
         required: false
-        default: "net5"
+        default: "ophub"
         type: choice
         options:
           - unifreq
-          - net5
+          - ophub
       kernel_version:
         description: "Select kernel version"
         required: false
